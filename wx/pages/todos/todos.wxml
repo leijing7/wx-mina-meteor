@@ -1,0 +1,11 @@
+<view class="container">
+  <text>todo list</text>
+  <checkbox-group bindchange="checkboxChange">
+    <section class="todo-list" wx:for="{{todos}}" wx:for-item="todo">
+      <view class="item">
+        <checkbox value="{{todo.id}}" checked="{{todo.checked}}"/>{{todo.text}}
+      </view>
+    </section>
+  </checkbox-group>
+</view>
+

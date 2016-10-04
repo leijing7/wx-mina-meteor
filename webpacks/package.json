@@ -1,0 +1,20 @@
+{
+  "name": "webpacks",
+  "version": "0.0.1",
+  "description": "packed for mina",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack -p --colors --profile --display-modules"
+  },
+  "author": "Lei Jing",
+  "license": "ISC",
+  "devDependencies": {
+    "exports-loader": "^0.6.3",
+    "imports-loader": "^0.6.5",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "asteroid": "^2.0.2",
+    "underscore": "^1.8.3"
+  }
+}

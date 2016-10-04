@@ -1,0 +1,12 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: row; 
+  margin: 10px;
+}
+
+

@@ -1,9 +1,13 @@
 <view class="container">
   <text>todo list</text>
+  <view class="newItem">
+    <input class="newInput" placeholder="添加新的待办事项" bindinput="bindKeyInput"/>
+    <button class="addBtn" type="default" bindtap="bindAddBtnTap" size="mini" plain="true"> Add </button>
+  </view>
   <checkbox-group bindchange="checkboxChange">
     <section class="todo-list" wx:for="{{todos}}" wx:for-item="todo">
       <view class="item">
-        <checkbox value="{{todo.id}}" checked="{{todo.checked}}"/>{{todo.text}}
+        <checkbox value="{{todo.id}}" checked="{{todo.checked}}"/> {{todo.text}}
       </view>
     </section>
   </checkbox-group>

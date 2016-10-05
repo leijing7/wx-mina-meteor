@@ -1,12 +1,20 @@
-.todo-list {
+.item {
+  display: flex;
+  flex-direction: row; 
+  margin: 15px;
+}
+
+.newItem {
   display: flex;
   flex-direction: column;
 }
 
-.item {
-  display: flex;
-  flex-direction: row; 
-  margin: 10px;
+.newInput {
+  flex-direction: row;
 }
 
+.addBtn {
+  flex-direction: row;
+  margin-top: 20px;
+}
 

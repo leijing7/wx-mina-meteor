@@ -19,6 +19,7 @@
     owner: this.userId,
     username: username,
   });
+},
 ```
 
 这样才能在小程序端插入新的事项。

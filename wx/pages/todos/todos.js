@@ -19,7 +19,12 @@ Page({
   onLoad: function () {
     const Asteroid = asteroid.createClass()
     this.data.client = new Asteroid({
-      endpoint: "ws://localhost:3000/websocket"
+      endpoint: "ws://localhost:3000/websocket",
+      SocketConstructor: function (endpoint) {
+        return wx.connectSocket({
+                url: endpoint
+              })
+      }
     });
     this.data.client.subscribe("tasks");
     this.data.client.ddp.on("added", ({collection, id, fields}) => {
